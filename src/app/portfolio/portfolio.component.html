@@ -1,0 +1,129 @@
+<section>
+  <h1>PORTFOLIO COMPONENT</h1>
+  <div id="star">
+    <div class="theWhite"></div>
+    <i class="fas fa-star fa-lg"></i>
+    <div class="theWhite"></div>
+  </div>
+</section>
+
+<section class="mb-3">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div
+          (click)="openMpdel('./assets/images/poert1.png')"
+          class="position-relative"
+        >
+          <img
+            src="./assets/images/poert1.png"
+            class="w-100 rounded-2"
+            role="button"
+            alt=""
+          />
+          <div class="plus rounded-2" role="button">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          (click)="openMpdel('./assets/images/port2.png')"
+          class="position-relative"
+        >
+          <img
+            src="./assets/images/port2.png"
+            class="w-100 rounded-2"
+            role="button"
+            alt=""
+          />
+          <div class="plus rounded-2" role="button">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          (click)="openMpdel('./assets/images/port3.png')"
+          class="position-relative"
+        >
+          <img
+            src="./assets/images/port3.png"
+            class="w-100 rounded-2"
+            role="button"
+            alt=""
+          />
+          <div class="plus rounded-2" role="button">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          (click)="openMpdel('./assets/images/poert1.png')"
+          class="position-relative"
+        >
+          <img
+            src="./assets/images/poert1.png"
+            class="w-100 rounded-2"
+            role="button"
+            alt=""
+          />
+          <div class="plus rounded-2" role="button">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          (click)="openMpdel('./assets/images/port2.png')"
+          class="position-relative"
+        >
+          <img
+            src="./assets/images/port2.png"
+            class="w-100 rounded-2"
+            role="button"
+            alt=""
+          />
+          <div class="plus rounded-2" role="button">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          (click)="openMpdel('./assets/images/port3.png')"
+          class="position-relative"
+        >
+          <img
+            src="./assets/images/port3.png"
+            class="w-100 rounded-2"
+            role="button"
+            alt=""
+          />
+          <div class="plus rounded-2" role="button">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  [ngClass]="{
+    'd-none': imgUrl == '',
+    'd-flex,justify-content-center,align-items-md-start': imgUrl != ''
+  }"
+  id="lightScreen"
+  (click)="openMpdel('')"
+>
+  <div class="the-Image">
+    <img [src]="imgUrl" class="w-100" alt="" />
+  </div>
+</div>
